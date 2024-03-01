@@ -1,26 +1,27 @@
-# TelegramRemotePC RU
-* Это русская версия если захотите переделать под свой язык просто в python скрипте поменяйте названия функций :)
-* Пароль в телеграме 12345 в самом скрипте это есть 
-* Сам токен от телеграм бота нужно вставить в config.py
+This is the Russian version. If you want to modify it to your language, just change the function names in the Python script :)
 
-Этот скрипт использует следующие модули:
-telebot: Для работы с API Telegram и создания бота.
-io.StringIO: Для работы с потоками ввода-вывода в формате строк.
-sys: Для доступа к системным переменным и функциям.
-os: Для работы с операционной системой, включая доступ к переменным окружения и файловой системе.
-subprocess: Для запуска и управления дочерними процессами, такими как выполнение внешних команд.
-config: Предположительно, это модуль с конфигурационными данными, содержащими ключи API Telegram или другие настройки. Обычно создается пользователем и не входит в стандартную библиотеку Python.
-ctypes: Для вызова функций из библиотеки на языке C.
-pyautogui: Для автоматизации работы с пользовательским интерфейсом, такой как управление мышью и клавиатурой.
-datetime: Для работы с датами и временем.
-pymsgbox: Для создания диалоговых окон на Python.
-PIL.ImageGrab: Для захвата изображений экрана.
+The password in Telegram is 12345, and it is present in the script itself.
 
-*pip install pytelegrambotapi pyautogui pymsgbox pillow* 
+You need to insert the Telegram bot token into config.py.
 
-*start.bat* - запускает скрипт в скрытом режиме в windows  
+This script uses the following modules:
+- **telebot**: For working with the Telegram API and creating bots.
+- **io.StringIO**: For working with input-output streams in string format.
+- **sys**: For accessing system variables and functions.
+- **os**: For working with the operating system, including access to environment variables and the file system.
+- **subprocess**: For running and managing child processes, such as executing external commands.
+- **config**: Presumably, this is a module with configuration data containing Telegram API keys or other settings. Usually created by the user and not included in the standard Python library.
+- **ctypes**: For calling functions from the C library.
+- **pyautogui**: For automating interactions with the user interface, such as mouse and keyboard control.
+- **datetime**: For working with dates and times.
+- **pymsgbox**: For creating dialog boxes in Python.
+- **PIL.ImageGrab**: For capturing screen images.
 
-Диспетчер задач, отображенный на скриншоте, включает в себя возможность закрытия процессов через диспетчер задач. 
-При выборе этой функции процесс, указанный пользователем, будет завершен, после чего информация о нем будет передана боту.
+```plaintext
+pip install pytelegrambotapi pyautogui pymsgbox pillow
+```
+![image](https://github.com/Danik105/TelegramRemotePC/assets/41839304/fa5f82b0-4a10-426a-9a5f-43c2bb962f0c)
 
-![image](https://github.com/Danik105/TelegramRemotePC/assets/41839304/91980b61-787f-4ae3-b1c2-9416cd3a81f3)
+start.bat - launches the script in hidden mode on Windows.
+
+The Task Manager shown in the screenshot includes the ability to close processes. When this function is selected, the process specified by the user will be terminated, after which information about it will be sent to the bot.
